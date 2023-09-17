@@ -1,4 +1,4 @@
-package org.jackie.transformation;
+package transformation;
 
 public class FlatMapTest {
 }

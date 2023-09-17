@@ -1,4 +1,4 @@
-package org.jackie.aggregation;
+package aggregation;
 
 public class KeyByTest {
 }
