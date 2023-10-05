@@ -9,11 +9,27 @@ public class Record {
         this.ts = ts;
     }
 
-    /**
-     * @return
-     */
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getTs() {
+        return ts;
+    }
+
+    public void setTs(Integer ts) {
+        this.ts = ts;
+    }
+
     @Override
     public String toString() {
-        return "name:" + this.name + " " + "ts:" + this.ts;
+        return "Record{" +
+                "name='" + name + '\'' +
+                ", ts=" + ts +
+                '}';
     }
 }
