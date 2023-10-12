@@ -8,7 +8,7 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 public class ReadTextFileTest {
     public static void main(String[] args) throws Exception {
-        StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+        StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment().setParallelism(1);
 
         DataStream<String> record = env.readTextFile("/Users/laijunji/github/learning_flink_stey_by_step/flink/src/main/java/source/data.txt");
 
